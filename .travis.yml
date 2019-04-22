@@ -7,4 +7,4 @@ branches:
 git:
   depth: false
 language: bash
-script: echo $TRAVIS_COMMIT_RANGE
+script: echo $TRAVIS_COMMIT_RANGE; exit 1
