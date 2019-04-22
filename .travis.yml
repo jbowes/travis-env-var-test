@@ -6,7 +6,5 @@ branches:
   - "/^v([0-9]+)\\.([0-9]+)\\.([0-9]+)(?:\\-(rc\\.[0-9]+)*)?$/"
 git:
   depth: false
-language: go
-go:
-- "1.11.x"
+language: bash
 script: echo $TRAVIS_COMMIT_RANGE
