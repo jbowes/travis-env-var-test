@@ -5,7 +5,7 @@ branches:
 language: go
 
 script:
-  - go test -race -coverprofile=coverage.txt -covermode=atomic
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -F main
+  - go test -race -coverprofile=coverage.txt -covermode=atomic ./a
+  - bash <(curl -s https://codecov.io/bash) -c -F a
+  - go test -race -coverprofile=coverage.txt -covermode=atomic ./b
+  - bash <(curl -s https://codecov.io/bash) -c -F b
