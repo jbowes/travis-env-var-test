@@ -1,0 +1,7 @@
+flags:
+  a:
+    paths:
+      - a/
+  b:
+    paths:
+      - b/
